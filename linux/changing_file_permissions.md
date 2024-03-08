@@ -3,7 +3,7 @@
 -   [Changing File Permissions in Linux](#changing-file-permissions-in-linux)
     -   [Linux Command for Changing File Permissions](#linux-command-for-changing-file-permissions)
     -   [Requirements for Changing Permissions on a File](#requirements-for-changing-permissions-on-a-file)
-    -   [Examples of Setting Permissions on a File (`testfile.txt`)](#examples-of-setting-permissions-on-a-file-testfiletxt)
+    -   [Examples of Setting Permissions on a File](#examples-of-setting-permissions-on-a-file)
         -   [1. Set Permissions: User to Read, Group to Read + Write + Execute, and Other to Read and Write Only](#1-set-permissions-user-to-read-group-to-read--write--execute-and-other-to-read-and-write-only)
         -   [2. Add Execute Permissions (to All Entities)](#2-add-execute-permissions-to-all-entities)
         -   [3. Take Write Permissions Away from Group](#3-take-write-permissions-away-from-group)
@@ -20,7 +20,7 @@ To change permissions on a file, the end user must be either:
 1. The owner of the file.
 2. A superuser or have administrative privileges.
 
-### Examples of Setting Permissions on a File (`testfile.txt`)
+### Examples of Setting Permissions on a File
 
 #### 1. Set Permissions: User to Read, Group to Read + Write + Execute, and Other to Read and Write Only
 

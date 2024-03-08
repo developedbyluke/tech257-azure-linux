@@ -8,9 +8,7 @@
     -   [File Information Commands](#file-information-commands)
     -   [Package Management Commands](#package-management-commands)
     -   [Permissions Commands](#permissions-commands)
-    -   [Scripting and Automation](#scripting-and-automation)
-        -   [Creating and Running a Provisioning Script for Nginx](#creating-and-running-a-provisioning-script-for-nginx)
-        -   [Variables in Shell Scripts](#variables-in-shell-scripts)
+    -   [Process Management Commands](#process-management-commands)
     -   [Other Commands](#other-commands)
 
 ---
@@ -77,42 +75,15 @@
 
 -   `chmod [permissions] [file_name]`: Change the permissions of a file or directory, e.g. `chmod +x script.sh` to add execute permissions.
 
-## Scripting and Automation
+## Process Management Commands
 
-### Creating and Running a Provisioning Script for Nginx
-
-To automate the installation and configuration of Nginx on a Linux system, you can create a shell script. Here's an example script that installs Nginx, starts the service, and enables it to run at boot:
-
-```bash
-#!/bin/bash
-
-# Update the package list
-sudo apt update
-
-# Install Nginx
-sudo apt install -y nginx
-
-# Start the Nginx service
-sudo systemctl start nginx
-
-# Enable Nginx to start on boot
-sudo systemctl enable nginx
-
-echo "Nginx installation and setup completed."
-```
-
-Save this script to a file, for example, `install_nginx.sh`, and make it executable with the command `chmod +x install_nginx.sh`. Run the script using `./install_nginx.sh`.
-
-### Variables in Shell Scripts
-
-1. **Creating a Variable** : Assign a value to a variable with `variable_name=value`. Do not add spaces around the `=` sign. For example, `greeting="Hello, World!"`.
-2. **Using a Variable** : Reference the variable with `$variable_name`. For example, `echo $greeting` would print "Hello, World!".
-3. **Persisting Variables** : To make variables persistent across sessions and VM restarts, add them to `~/.bashrc`.
-
-```bash
-echo 'export greeting="Hello, World!"' >> ~/.bashrc
-source ~/.bashrc
-```
+-   `ps aux` - View all running processes.
+-   `top` - View a dynamic, real-time list of running processes.
+-   `command &` - Run `command` in the background.
+-   `fg` - Bring a background process to the foreground.
+-   `kill PID` - Gracefully terminate a process with the given PID.
+-   `kill -9 PID` - Forcefully terminate a process with the given PID.
+-   `pgrep name` - Find the PID of a process named `name`.
 
 ## Other Commands
 
