@@ -45,8 +45,6 @@ Go to `http://public-ip:3000` in a web browser.
 
 ### Automating the Deployment
 
-To automate the installation and configuration of Nginx and the app on a Linux system, you can create a shell script. Here's an example script that installs Nginx, starts the service, and enables it to run at boot:
-
 ```bash
 #!/bin/bash
 
