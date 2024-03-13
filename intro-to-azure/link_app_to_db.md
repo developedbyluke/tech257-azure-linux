@@ -30,8 +30,7 @@
 3. `source ~/.bashrc`: Reloads the `.bashrc` file to apply the changes immediately.
 4. `echo $DB_HOST`: Displays the current value of the `DB_HOST` variable to verify it's set correctly.
 
-### Application Setup and Management
+### App Setup
 
-1. `printenv DB_HOST`: Prints the value of the `DB_HOST` environment variable to verify it's correctly set system-wide.
-2. `sudo -E npm install`: Installs Node.js dependencies, preserving the user's environment variables. The `-E` flag ensures `sudo` runs with the current user's environment, important for using the correct `DB_HOST`.
-3. `sudo -E npm start`: Starts the Node.js application, preserving the user's environment variables.
+1. `sudo -E npm install`: Installs Node.js dependencies, preserving the user's environment variables. The `-E` flag ensures `sudo` runs with the current user's environment, important for using the correct `DB_HOST`.
+2. `sudo -E npm start`: Starts the Node.js application, preserving the user's environment variables.
