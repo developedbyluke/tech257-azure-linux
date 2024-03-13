@@ -31,3 +31,7 @@ az vm generalize --resource-group <resource-group-name> --name <vm-name>
 ### Process of Automating Deployment of an App
 
 Firstly, we need to create a VM and SSH into it. Commands then need to be run manually before we automate anything so we can make sure the commands are working and that they are working without requiring user input. Once we know the commands are working, we can then automate the process using a script. The next stage of automation is to use user data to run the script when the VM is created so we no longer need to SSH into the VM to run the script. After this, we can use a custom image to create a VM with the script already run.
+
+### User Data
+
+User data is a script that runs when a VM is created. It can be used to automate the process of setting up a VM. It is a shell script that runs when the VM is created and can be used to install software, configure the VM, and more.
