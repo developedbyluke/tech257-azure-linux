@@ -53,7 +53,7 @@ az storage account update --name <storage_account_name> --resource-group <resour
 To create a container within a storage account:
 
 ```shell
-az storage container create --account-name <storage_account_name> --name <container_name> --auth-mode login
+az storage container create --account-name <storage_account_name> --name <container_name> --public-access blob --auth-mode login
 ```
 
 #### Delete a Storage Container
@@ -82,6 +82,8 @@ To upload a file as a blob into a specific container:
 az storage blob upload --account-name <storage_account_name> --container-name <container_name> --name <blob_name> --file <path_to_file> --auth-mode login
 ```
 
+az storage blob upload --account-name tech257lukestorage --container-name images --name image1 --file image1 --auth-mode login
+
 #### Delete a Blob
 
 To delete a blob from a container:
@@ -104,12 +106,4 @@ To download a blob from a container:
 
 ```shell
 az storage blob download --account-name <storage_account_name> --container-name <container_name> --name <blob_name> --file <path_to_download> --auth-mode login
-```
-
-#### Set Container Public Access Level
-
-To modify the public access level of a container:
-
-```shell
-az storage container set-permission --account-name <storage_account_name> --name <container_name> --public-access off|blob|container --auth-mode login
 ```

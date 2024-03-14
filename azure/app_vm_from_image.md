@@ -19,6 +19,16 @@ In the 'Advanced' tab, enable 'User Data' and provide the user data needed to st
 
 In this script, we simply `cd` into the app directory and run `pm2 start app.js` to start the app in the background.
 
+```bash
+#!/bin/bash
+
+cd repo/app
+
+pm2 stop app.js
+
+pm2 start app.js
+```
+
 ### Accessing the App
 
 Now the app is running and you should be able to access it from the public IP of the VM without needing to specify a port.
