@@ -1,3 +1,53 @@
+### Storage Accounts
+
+#### Create a Storage Account
+
+To create a new storage account:
+
+```shell
+az storage account create --name <storage_account_name> --resource-group <resource_group_name> --location <location> --sku Standard_LRS
+```
+
+-   `--sku` specifies the performance tier (Standard_LRS is standard locally redundant storage).
+
+#### List Storage Accounts
+
+To list all storage accounts in a subscription or a specific resource group:
+
+```shell
+az storage account list --resource-group <resource_group_name> --output table
+```
+
+Omit `--resource-group` to list storage accounts across the subscription.
+
+#### Show Storage Account Details
+
+To display detailed information about a specific storage account:
+
+```shell
+az storage account show --name <storage_account_name> --resource-group <resource_group_name>
+```
+
+#### Delete a Storage Account
+
+To delete a specific storage account:
+
+```shell
+az storage account delete --name <storage_account_name> --resource-group <resource_group_name> --yes
+```
+
+-   `--yes` flag bypasses the confirmation prompt.
+
+#### Update a Storage Account
+
+To update the properties of a storage account (e.g., change SKU):
+
+```shell
+az storage account update --name <storage_account_name> --resource-group <resource_group_name> --sku Standard_GRS
+```
+
+-   This command changes the storage account to geo-redundant storage.
+
 #### Create a Storage Container
 
 To create a container within a storage account:
