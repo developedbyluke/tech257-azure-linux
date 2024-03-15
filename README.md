@@ -2,6 +2,7 @@
 
 ### Azure Documentation
 
+-   [Scale Sets in Azure](azure/scale-sets.md)
 -   [Autoscaling](azure/autoscaling.md)
 -   [Azure Basics](azure/azure_basics.md)
 -   [Blob Storage](azure/blob-storage.md)

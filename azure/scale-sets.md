@@ -1,5 +1,16 @@
 # Scale Sets in Azure
 
+-   [Scale Sets in Azure](#scale-sets-in-azure)
+    -   [What is a Scale Set?](#what-is-a-scale-set)
+    -   [What is a Load Balancer?](#what-is-a-load-balancer)
+    -   [Pre-Requisites to Make a Scale Set](#pre-requisites-to-make-a-scale-set)
+    -   [How to Make a Scale Set](#how-to-make-a-scale-set)
+    -   [How to Test the Scale Set](#how-to-test-the-scale-set)
+    -   [Healthy/Unhealthy Health State](#healthyunhealthy-health-state)
+        -   [Making an Instance Unhealthy](#making-an-instance-unhealthy)
+    -   [How to SSH into a Virtual Machine Instance](#how-to-ssh-into-a-virtual-machine-instance)
+    -   [Deleting a Scale Set and all of its Connected Resources](#deleting-a-scale-set-and-all-of-its-connected-resources)
+
 ### What is a Scale Set?
 
 A scale set is a group of virtual machine instances that are created from the same image and are managed as a group.
