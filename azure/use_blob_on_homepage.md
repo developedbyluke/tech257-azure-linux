@@ -40,4 +40,4 @@ pm2 stop app
 pm2 start app.js
 ```
 
-![alt text](image-7.png)
+![](images/image-7.png)

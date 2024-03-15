@@ -11,11 +11,11 @@
 
 Navigate to the image and create a new VM from it or create a VM elsewhere and select the image in the image field.
 
-![](../images/vm-image.png "Selecting the image for the VM")
+![](..images/vm-image.png "Selecting the image for the VM")
 
 In the 'Advanced' tab, enable 'User Data' and provide the user data needed to start the app from the VM.
 
-![](../images/minimal-user-data.png "User data needed to start the app")
+![](..images/minimal-user-data.png "User data needed to start the app")
 
 In this script, we simply `cd` into the app directory and run `pm2 start app.js` to start the app in the background.
 
@@ -33,7 +33,7 @@ pm2 start app.js
 
 Now the app is running and you should be able to access it from the public IP of the VM without needing to specify a port.
 
-![](./../images/website.png "App running on public IP")
+![](./..images/website.png "App running on public IP")
 
 ### Blockers Encountered
 

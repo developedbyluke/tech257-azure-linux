@@ -20,21 +20,21 @@
 
 Within a VM's 'Overview' panel, go to the 'Monitoring' tab and pin the metrics you want to monitor to a new or existing dashboard.
 
-![](image.png)
+![](images/image.png)
 
 **Go to the Dashboard** :
 
 -   Search for "Dashboards" in the Azure Portal and click on "Dashboard Hub" from the results or navigate there another way.
 -   Click into your dashboard.
 
-![alt text](image-1.png)
+![](images/image-1.png)
 
 **Configure the Metrics** :
 
 -   Right click on a tile and click 'Configure tile settings'.
 -   Adjust the timespan and granularity as needed.
 
-![alt text](image-2.png)
+![](images/image-2.png)
 
 **Save the Dashboard** : Once you have configured a tile, click "Save to Dashboard".
 
@@ -59,6 +59,6 @@ To set up a CPU usage alert:
 
 After setting up a CPU usage email alert and conducting some heavy load testing, the CPU load reaches 100% and I receive an email.
 
-![alt text](image-4.png)
+![](images/image-4.png)
 
-![alt text](image-5.png)
+![](images/image-5.png)
