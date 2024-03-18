@@ -4,6 +4,7 @@
 
 -   [Scale Sets in Azure](azure/scale-sets.md)
 -   [Autoscaling](azure/autoscaling.md)
+-   [Using an NVA in a 3 Subnet Architecture for a Private Database VM](azure/3-subnet-architecture.md)
 -   [Azure Basics](azure/azure_basics.md)
 -   [Blob Storage](azure/blob-storage.md)
 -   [Creating a VM from Custom Image](azure/creating_a_vm_from_custom_image.md)
