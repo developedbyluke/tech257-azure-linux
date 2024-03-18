@@ -6,10 +6,10 @@
 -   [Autoscaling](azure/autoscaling.md)
 -   [Using an NVA in a 3 Subnet Architecture for a Private Database VM](azure/3-subnet-architecture.md)
 -   [Azure Basics](azure/azure_basics.md)
--   [Blob Storage](azure/blob-storage.md)
+-   [Blob Storage](azure/blob_storage_commands.md)
 -   [Creating a VM from Custom Image](azure/creating_a_vm_from_custom_image.md)
 -   [Linking App to Database](azure/link_app_to_db.md)
--   [User Data](azure/user_data.md)
+-   [User Data](azure/app_vm_from_image.md)
 
 ### Linux Documentation
 
