@@ -11,7 +11,7 @@
 
 ### Steps
 
-#### If they are not already, link the app VM to the database VM
+#### If they are not already linked, connect the app VM to the database VM
 
 Set a DB_HOST environment variable on the app VM with the database's private IP address and the MongoDB default port number.
 
